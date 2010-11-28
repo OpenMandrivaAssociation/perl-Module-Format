@@ -5,8 +5,8 @@ Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
 
-Summary:    An ordered list of L<Module::Format::Module>
-License:    GPL+ or Artistic
+Summary:    Convert and manipulate stringified versions of Perl modules
+License:    MIT
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.xz
@@ -22,7 +22,13 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
-no description found
+Module-Format is a set of Perl modules and the accompanying perlmf command line
+utility that can be used to output consistetly formatted named of Perl modules
+for input in applications. So one can do:
+
+urpmi --auto $(perlmf as_rpm_c "$@")
+
+to install perl dependencies using urpmi (and many other uses).
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
