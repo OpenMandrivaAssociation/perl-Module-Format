@@ -1,9 +1,9 @@
 %define upstream_name    Module-Format
-%define upstream_version v0.0.2
+%define upstream_version v0.0.3
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Convert and manipulate stringified versions of Perl modules
 License:    MIT
