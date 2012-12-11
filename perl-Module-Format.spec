@@ -56,3 +56,24 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.0.3-3mdv2011.0
++ Revision: 657449
+- rebuild for updated spec-helper
+
+* Sun Feb 27 2011 Shlomi Fish <shlomif@mandriva.org> 0.0.3-2
++ Revision: 640667
+- Bumped rel for the new perl
+
+* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.0.3-1mdv2011.0
++ Revision: 606858
+- Upgraded to 0.0.3
+
+* Sun Nov 28 2010 Shlomi Fish <shlomif@mandriva.org> 0.0.2-2mdv2011.0
++ Revision: 602592
+- Bumped the release number
+- Fixed the information
+- import perl-Module-Format
+
