@@ -1,15 +1,15 @@
 %define upstream_name    Module-Format
-%define upstream_version v0.0.3
+%define upstream_version v0.0.4
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Version:    %perl_convert_version 0.0.4
+Release:    1
 
 Summary:    Convert and manipulate stringified versions of Perl modules
 License:    MIT
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.xz
+Source0:    http://www.cpan.org/modules/by-module/Module/Module-Format-v0.0.4.tar.gz
 
 BuildRequires: perl(Getopt::Long)
 BuildRequires: perl(Pod::Usage)
@@ -19,7 +19,6 @@ BuildRequires: perl(vars)
 BuildRequires: perl(warnings)
 BuildRequires: perl(Module::Build)
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Module-Format is a set of Perl modules and the accompanying perlmf command line
@@ -41,14 +40,10 @@ to install perl dependencies using urpmi (and many other uses).
 ./Build test
 
 %install
-rm -rf %{buildroot}
 ./Build install destdir=%{buildroot}
 
-%clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes META.yml README
 %{_bindir}/perlmf
 %{_mandir}/man1/*
@@ -76,4 +71,5 @@ rm -rf %buildroot
 - Bumped the release number
 - Fixed the information
 - import perl-Module-Format
+
 
