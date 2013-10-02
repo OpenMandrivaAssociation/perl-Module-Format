@@ -1,15 +1,15 @@
 %define upstream_name    Module-Format
-%define upstream_version v0.0.4
+%define upstream_version v0.0.5
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.0.4
+Version:    %perl_convert_version 0.0.5
 Release:    1
 
 Summary:    Convert and manipulate stringified versions of Perl modules
 License:    MIT
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Module/Module-Format-v0.0.4.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Module/Module-Format-v0.0.5.tar.gz
 
 BuildRequires: perl(Getopt::Long)
 BuildRequires: perl(Pod::Usage)
@@ -71,5 +71,6 @@ to install perl dependencies using urpmi (and many other uses).
 - Bumped the release number
 - Fixed the information
 - import perl-Module-Format
+
 
 
