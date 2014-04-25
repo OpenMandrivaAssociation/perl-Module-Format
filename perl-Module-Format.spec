@@ -2,14 +2,15 @@
 %define upstream_version v0.0.5
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.0.5
+Version:    %perl_convert_version 0.0.6
 Release:    1
 
 Summary:    Convert and manipulate stringified versions of Perl modules
+
 License:    MIT
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Module/Module-Format-v0.0.5.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-v0.0.6.tar.gz
 
 BuildRequires: perl(Getopt::Long)
 BuildRequires: perl(Pod::Usage)
@@ -48,29 +49,9 @@ to install perl dependencies using urpmi (and many other uses).
 %{_bindir}/perlmf
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-%perl_vendorlib/*
+%{perl_vendorlib}/*
 
 
-
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.0.3-3mdv2011.0
-+ Revision: 657449
-- rebuild for updated spec-helper
-
-* Sun Feb 27 2011 Shlomi Fish <shlomif@mandriva.org> 0.0.3-2
-+ Revision: 640667
-- Bumped rel for the new perl
-
-* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.0.3-1mdv2011.0
-+ Revision: 606858
-- Upgraded to 0.0.3
-
-* Sun Nov 28 2010 Shlomi Fish <shlomif@mandriva.org> 0.0.2-2mdv2011.0
-+ Revision: 602592
-- Bumped the release number
-- Fixed the information
-- import perl-Module-Format
 
 
 
