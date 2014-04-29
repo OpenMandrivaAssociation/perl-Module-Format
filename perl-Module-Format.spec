@@ -19,6 +19,7 @@ BuildRequires: perl(strict)
 BuildRequires: perl(vars)
 BuildRequires: perl(warnings)
 BuildRequires: perl(Module::Build)
+BuildRequires: perl(JSON::PP)
 BuildArch: noarch
 
 %description
@@ -47,11 +48,6 @@ to install perl dependencies using urpmi (and many other uses).
 %files
 %doc Changes META.yml README
 %{_bindir}/perlmf
-%{_mandir}/man1/*
-%{_mandir}/man3/*
+%{_mandir}/man?/*
 %{perl_vendorlib}/*
-
-
-
-
 
