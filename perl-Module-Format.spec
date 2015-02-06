@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 0.0.6
-Release:    2
+Release:    3
 
 Summary:    Convert and manipulate stringified versions of Perl modules
 
