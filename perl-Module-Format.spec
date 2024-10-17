@@ -9,7 +9,7 @@ Summary:    Convert and manipulate stringified versions of Perl modules
 
 License:    MIT
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-v0.0.6.tar.gz
 
 BuildRequires: perl(Getopt::Long)
