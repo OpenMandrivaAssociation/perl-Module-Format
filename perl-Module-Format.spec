@@ -1,9 +1,7 @@
 %define upstream_name    Module-Format
-%define upstream_version 0.4.0
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.4.0
+Release:    2
 
 Summary:    Convert and manipulate stringified versions of Perl modules
 
