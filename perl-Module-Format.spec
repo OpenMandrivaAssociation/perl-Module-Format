@@ -1,14 +1,14 @@
 %define upstream_name    Module-Format
 Name:       perl-%{upstream_name}
-Version:    0.4.0
-Release:    2
+Version:	0.4.0
+Release:    1
 
 Summary:    Convert and manipulate stringified versions of Perl modules
 
 License:    MIT
 Group:      Development/Perl
 Url:        https://github.com/shlomif/perl-Module-Format
-Source0:    https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/Module-Format-0.4.0.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/Module-Format-0.4.0.tar.gz
 
 BuildRequires: perl(Getopt::Long)
 BuildRequires: perl(Pod::Usage)
