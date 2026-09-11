@@ -30,7 +30,7 @@ urpmi --auto $(perlmf as_rpm_c "$@")
 to install perl dependencies using urpmi (and many other uses).
 
 %prep
-%setup -qn %{upstream_name}-v%{version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
